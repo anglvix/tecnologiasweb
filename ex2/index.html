@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">                 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Khand' rel='stylesheet'>
+
+    <title>Cosmix</title>
+</head>
+
+<body>
+    <h1>Cosmix</h1>
+    <hr>
+    <img src="loja.jpeg" alt="loja de roupa" width="200px">
+<form>
+        <fieldset>
+            <legend>Dados do Cliente</legend>
+
+            <label for="nome">Nome do cliente:</label>
+            <input type="text" id="nome" name="nome" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalhes da Peça</legend>
+
+            <label for="tipo">Tipo de peça de roupa:</label>
+            <select id="tipo" name="tipo">
+                <option value="camisa">Camisa</option>
+                <option value="calcas">Calças</option>
+                <option value="casaco">Casaco</option>
+                <option value="vestido">Vestido</option>
+                <option value="sapatos">Sapatos</option>
+            </select>
+
+            <label>Tamanho:</label>
+            <input type="radio" id="tamS" name="tamanho" value="S">
+            <label for="tamS">S</label>
+
+            <input type="radio" id="tamM" name="tamanho" value="M">
+            <label for="tamM">M</label>
+
+            <input type="radio" id="tamL" name="tamanho" value="L">
+            <label for="tamL">L</label>
+
+            <input type="radio" id="tamXL" name="tamanho" value="XL">
+            <label for="tamXL">XL</label>
+
+            <label for="cor">Cor pretendida:</label>
+            <input type="color" id="cor" name="cor">
+        </fieldset>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+
+</html>
