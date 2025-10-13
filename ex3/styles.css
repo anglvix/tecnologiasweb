@@ -1,30 +1,25 @@
-/* Ajustes para a renderização do texto em diferentes browsers */
 html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
 }
 
-/* Estilos gerais para o corpo da página */
 body{
     margin: 0px; 
     margin-bottom: 50px;        
-    background-color: #E9F0F8; /* Cor de fundo da página */
+    background-color: #E9F0F8;
     text-align:left;             
 }
 
-/* Estilos para fontes e cores gerais */
 html,body{
-    font-family: 'Quicksand';   
-    color:#142B45; /* contraste AAA com fundo */
-    font-size: 20px;             
+    font-family: 'Quicksand';
+    color:#142B45;
+    font-size: 20px;
 }
 
-/* Estilos específicos para a seção 'main' da página */
 main {
     margin: 20px;           
 }
 
-/* Estilos para os elementos com a classe 't1' e 't2' */
 .t1, .t2 {
     font-size: 20px;            
     font-family: 'Quicksand';   
@@ -32,7 +27,6 @@ main {
 .t1 { color: #31325c; }
 .t2 { color: #313651; }
 
-/* Estilos para os elementos com as classes 'h1' e 'h2' */
 .h1 {
     font-size: 40px;            
     color: #525588;           
@@ -46,7 +40,6 @@ main {
     font-family: 'Khand';       
 }
 
-/* Estilos para o elemento com a classe 'namesb' */
 .namesb {
     float: none;                
     color: #97A8CB;           
@@ -55,7 +48,6 @@ main {
     font-weight: bold;          
 }
 
-/* Estilos para a classe 'myimage' e elementos img */
 .myimage {
     width: 95%;                 
     height: 80%;                
@@ -65,6 +57,7 @@ main {
 img {
     vertical-align: baseline;
 }
+
 a {
     color: inherit;             
 }
@@ -80,15 +73,17 @@ table {
     border-collapse: collapse;
     margin-top: 30px;
 }
+
 table thead th {
     font-size: 30px;
     background-color: #333333;
-    color: #ffffff;             
+    color: #ffffff;
     padding: 10px;
 }
+
 table tbody td {
     font-size: 20px;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     text-align: center;
     padding: 8px;
 }
