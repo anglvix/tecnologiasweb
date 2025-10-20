@@ -1,0 +1,113 @@
+#form {
+    display: block; /* Define a exibição do formulário como bloco */
+}
+
+.forms {
+    margin-top: 20px;         /* Espaçamento superior para o elemento com a classe 'forms' */
+    font-family: 'Quicksand'; /* Define a fonte para os elementos dentro da classe 'forms' */
+    font-size: 20px;          /* Define o tamanho da fonte para os elementos dentro da classe 'forms' */
+    font-weight: 400;         /* Define o peso da fonte para os elementos dentro da classe 'forms' */
+    line-height: 1.5;         /* Define a altura da linha para os elementos dentro da classe 'forms' */
+    color: #23293F;         /* Define a cor do texto para os elementos dentro da classe 'forms' */
+    text-align: left;         /* Alinhamento do texto à esquerda para os elementos dentro da classe 'forms' */
+    background-color: #C7D5E8;      /* Cor de fundo para os elementos dentro da classe 'forms' */
+    padding: 30px;            /* Espaçamento interno para os elementos dentro da classe 'forms' */
+    padding-bottom: 10px;     /* Espaçamento inferior adicional para os elementos dentro da classe 'forms' */
+    border-radius: 0.25rem;   /* Define o raio da borda para os elementos dentro da classe 'forms' */
+    max-width: 100%;          /* Define a largura máxima para os elementos dentro da classe 'forms' */
+}
+
+.form-group {
+  margin-bottom: 20px;        /* Espaçamento inferior entre grupos de elementos do formulário */
+}
+  
+.input-group {
+  position: relative;         /* Define a posição relativa para o grupo de entrada */
+  display: -ms-flexbox;       /* Permite o uso de caixas flexíveis no Internet Explorer 10 */
+  display: flex;              /* Permite o uso de caixas flexíveis */
+  flex-wrap: wrap;            /* Permite que o conteúdo seja distribuído em várias linhas */
+  align-items: stretch;       /* Estica os itens para que eles ocupem toda a altura da caixa flexível */
+  width: 90%;                /* Largura do grupo de entrada de 100% */
+}
+
+.form-control {
+  display: block;             /* Exibe o elemento como bloco */
+  width: 90%;                /* Largura do campo de entrada de 100% */
+  height: calc(30px + 15px + 2px);    /* Altura do campo de entrada do formulário */
+  padding: 7.5px 15px;        /* Espaçamento interno do campo de entrada do formulário */
+  font-family: 'Quicksand';   /* Define a fonte para o campo de entrada do formulário */
+  font-size: 20px;            /* Define o tamanho da fonte para o campo de entrada do formulário */
+  font-weight: 400;           /* Define o peso da fonte para o campo de entrada do formulário */
+  line-height: 1.5;           /* Define a altura da linha para o campo de entrada do formulário */
+  color: #495057;           /* Cor do texto para o campo de entrada do formulário */
+  background-color: #fff;   /* Cor de fundo para o campo de entrada do formulário */
+  background-clip: padding-box;       /* Controla a área de fundo do campo de entrada */
+  border: 1px solid #ced4da;        /* Borda do campo de entrada do formulário */
+  outline: none;              /* Remove a borda de foco ao clicar no campo de entrada do formulário */
+  border-radius: 5px;         /* Define o raio da borda do campo de entrada do formulário */
+}
+  
+select.form-control[size],select.form-control[multiple] {
+    height: auto;             /* Ajusta a altura do campo de seleção múltipla */
+}
+
+textarea.form-control {
+    font-family: 'Quicksand'; /* Define a fonte para a área de texto do formulário */
+    height: auto;             /* Ajusta a altura da área de texto automaticamente */
+}
+
+label.label {
+    display: inline-block;    /* Exibe o rótulo como um bloco em linha */
+    margin-bottom: 10px;      /* Espaçamento inferior do rótulo do formulário */
+}
+  
+.btn {
+  display: inline-block;      /* Exibe o botão como um bloco em linha */
+  font-weight: 400;           /* Define o peso da fonte para os botões do formulário*/
+  font-family: 'Quicksand';   /* Define a fonte para os botões do formulário */
+  text-align: center;         /* Centraliza o texto nos botões do formulário */
+  vertical-align: middle;     /* Alinha verticalmente os botões do formulário ao centro */
+  background-color: transparent;    /* Cor de fundo transparente para os botões do formulário */
+  padding: 7.5px 15px;        /* Espaçamento interno dos botões do formulário */
+  font-size: 20px;            /* Define o tamanho da fonte para os botões do formulário */
+  border-radius: 5px;         /* Define o raio da borda dos botões do formulário */
+  border-color: #788aad;    /* Cor da borda dos botões do formulário */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Efeitos de transição suaves para propriedades específicas */
+}
+  
+.btn:hover {
+  text-decoration: none;      /* Remove a decoração de texto ao passar o rato sobre os botões do formulário */
+}
+
+.btn-primary {
+  color: #fff;              /* Cor do texto para o botão primário do formulário */
+  background-color: #97A8CB;        /* Cor de fundo para o botão primário do formulário */
+}
+
+.btn-primary:hover {
+  color: #fff;              /* Cor do texto ao passar o rato sobre o botão primário do formulário */
+  background-color: #7986A3;        /* Cor de fundo ao passar o rato sobre o botão primário do formulário */
+}
+  
+.btn-lg,  .btn-group-lg>.btn {
+    padding: 10px 20px;       /* Espaçamento interno para botões grandes do formulário */
+    font-size: 25px;          /* Define o tamanho da fonte para botões grandes do formulário */
+    line-height: 1.5;         /* Define a altura da linha para botões grandes do formulário */
+    border-radius: 6px;       /* Define o raio da borda para botões grandes do formulário */
+}
+
+.btn-block {
+  width: 100%;                /* Largura de 100% para botões do tipo 'block' do formulário */
+}
+
+.btn-block2 {
+  width: 15%;                 /* Largura específica para botões do tipo 'block2' do formulário */
+}
+
+.btn-block + .btn-block {
+  margin-top: 10px;           /* Espaçamento superior entre blocos de botões do formulário */
+}
+  
+  input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 100%;              /* Largura de 100% para botões do tipo 'submit', 'reset' e 'button' do formulário */
+  }

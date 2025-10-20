@@ -1,0 +1,77 @@
+
+/* Ajustes para a renderização do texto em diferentes browsers */
+html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+}
+
+/* Estilos gerais para o corpo da página */
+body{
+    margin: 0px; 
+    margin-bottom: 50px;         /* Adiciona margem na parte inferior da página */
+    background-color: #E1EBF4; /* Cor de fundo do corpo da página */
+    text-align:left;             /* Alinhamento do texto à esquerda */
+}
+
+/* Estilos para fontes e cores gerais */
+html,body{
+    font-family: 'Quicksand';         /* Define a fonte padrão para o HTML e body */
+    color:#0D0D0D;             /* Cor do texto principal */
+    font-size: 25px;             /* Tamanho da fonte padrão */
+}
+
+/* Estilos específicos para a seção 'main' da página */
+main {
+    margin-top: 20px;           /* Margem superior da seção 'main' */
+    margin-left: 20px;          /* Margem esquerda da seção 'main' */
+    margin-right: 20px;        /* Margem direita da seção 'main' */
+}
+
+/* Estilos para os elementos com a classe 't1' e 't2' */
+.t1, .t2 {
+    font-size: 20px;            /* Tamanho da fonte para as classes 't1' e 't2' */
+    font-family: 'Quicksand';   /* Fonte específica para as classes 't1' e 't2' */
+}
+
+/* Cores específicas para as classes 't1' e 't2' */
+.t1 {
+    color: #31325c;
+}
+.t2 {
+    color: #313651;
+}
+
+/* Estilos para os elementos com as classes 'h1' e 'h2' */
+.h1 {
+    font-size: 55px;            /* Tamanho da fonte para a classe 'h1' */
+    color: #525588;           /* Cor do texto para a classe 'h1' */
+    font-family: 'Khand';       /* Fonte específica para a classe 'h1' */
+    font-weight: bold;          /* Peso da fonte para a classe 'h1' */
+}
+
+.h2 {
+    font-size: 45px;            /* Tamanho da fonte para a classe 'h2' */
+    color: #23293F;           /* Cor do texto para a classe 'h2' */
+    font-family: 'Khand';       /* Fonte específica para a classe 'h2' */
+    font-weight: bold; 
+}
+
+/* Estilos para a classe 'myimage' e elementos img */
+.myimage {
+    width: 95%;                 /* Largura da imagem com a classe 'myimage' */
+    height: 80%;                /* Altura da imagem com a classe 'myimage' */
+    margin-left: 20px;          /* Margem esquerda da imagem com a classe 'myimage' */
+    margin-right: 20px;         /* Margem direita da imagem com a classe 'myimage' */
+    margin-top: 10px;           /* Margem superior da imagem com a classe 'myimage' */
+    margin-bottom: 10px;        /* Margem inferior da imagem com a classe 'myimage' */
+}
+
+/* Ajuste do alinhamento vertical dos elementos img */
+img {
+    vertical-align: baseline;
+}
+
+/* Estilo para elementos de link (hiperlinks) */
+a {
+    color: inherit;             /* Herda a cor do texto do elemento pai */
+}
