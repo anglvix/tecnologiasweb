@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="menu.css">                   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -40,23 +40,52 @@
 
         <section id="contactos">
             <div class="h1"> Contacte-me </div>
-            <br>
+            <div class="forms">
+                    <div id="form">  
+                        <form id="form-id" class="form-class" action="" method="post">
+                            <div class="form-group">
+                                <label for="Name" class="label">Nome</label>
+                                <div class="input-group">
+                                    <input type="text" id="Name" name="Name" class="form-control" required>
+                                </div>
+                            </div>
 
-            <form>
-			<table>
-				<tbody>
-					<tr>
-						<td><label style="margin-right:10px;">Utilizador:</label></td>
-						<td><input name="user" type="text"/></td>
-					</tr>
-					<tr>
-						<td><label style="margin-right:10px;">Password:</label></td>
-						<td><input name="pass" type="text" /></td>
-					</tr>
-				</tbody>
-			</table>
+                            <div class="form-group">
+                                <label for="Surname" class="label">Apelido</label>
+                                <div class="input-group">
+                                    <input type="text" id="Surname" name="Surname" class="form-control">
+                                </div>
+                            </div>
 
-			<p><input name="enviar" type="submit" value="Login" /> <input name="apagar" type="reset" value="Apagar" /></p>
+                            <div class="form-group">
+                                <label for="Email" class="label">Endereço email</label>
+                                <div class="input-group">
+                                    <input type="text" id="Email" name="Email" class="form-control" placeholder="xxxxxx@gmail.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Num" class="label">Nº Telemóvel</label>
+                                <div class="input-group">
+                                    <input type="text" id="Num" name="Num" class="form-control" placeholder="xxxxxxxxx">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Message" class="label">A sua mensagem</label>
+                                <div class="input-group">
+                                    <textarea id="Message" name="Message" class="form-control" rows="9" maxlength="3000" placeholder="Hello there!" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="reset" name="reset" id="button" class="btn btn-primary btn-lg btn-block">Limpar</button>
+                                <button type="submit" id="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
         </section>
 
     </main>
