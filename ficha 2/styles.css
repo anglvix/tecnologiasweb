@@ -75,3 +75,17 @@ img {
 a {
     color: inherit;             /* Herda a cor do texto do elemento pai */
 }
+
+.projeto1{
+    display: block; 
+    background-color: #7796c2;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+}
+
+.projeto2{
+    display: block; 
+    background-color: #ae8ed3;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+}
