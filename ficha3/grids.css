@@ -1,0 +1,109 @@
+:root {
+    --background:rgb(255, 255, 255);
+    --pink1:#ffe5ec;
+    --pink2:#FFC2D1;
+    --pink3:#FFB3C6;
+    --pink4:#FF8FAB;
+    --pink5:#fb6f92;
+    --pink6:#ff517c;
+    --pink7:#92082B;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 190px 600px 280px;
+    grid-template-rows: 100px 100px 250px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.titulo {
+    background-color: var(--pink5);
+    grid-column: 1 / 4;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 35px;
+}
+.titulo .h1{
+    font-size: 55px;            
+    color: var(--pink7);           
+    font-family: "Mynerve", cursive;       
+    font-weight: bold;
+}
+
+
+.generos {
+    background-color: var(--pink2);
+    grid-row: 2 / 4;
+    padding: 20px;
+}
+
+.generos .h2{
+    font-size: 45px;            
+    color: var(--pink6);           
+    font-family: "Mynerve", cursive;       
+    font-weight: bold;
+}
+
+.sinopse {
+    grid-row: 2 / 4;
+    background-color: var(--pink1);
+    padding: 20px;
+}
+.sinopse .h2{
+    font-size: 45px;            
+    color: var(--pink6);           
+    font-family: "Mynerve", cursive;       
+    font-weight: bold;
+}
+
+.info {
+    grid-row: 2 / 4;
+    background-color: var(--pink2);
+    padding: 20px;
+}
+.info .h2{
+    font-size: 45px;            
+    color: var(--pink6);           
+    font-family: "Mynerve", cursive;       
+    font-weight: bold;
+}
+
+.elenco {
+    background-color: var(--pink4);
+    grid-column: 2 / 4;
+    padding: 20px;
+}
+.elenco .h2{
+    font-size: 45px;            
+    color: var(--pink7);           
+    font-family: "Mynerve", cursive;       
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color: #fff0f6;
+}
+
+.ator {
+    background-color: var(--pink3);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ator img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
