@@ -5,14 +5,14 @@
     --pink3:#FFB3C6;
     --pink4:#FF8FAB;
     --pink5:#fb6f92;
-    --pink6:#ff517c;
+    --pink6:#f2426e;
     --pink7:#92082B;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 190px 600px 280px;
-    grid-template-rows: 100px 100px 250px;
+    grid-template-rows: 100px 100px 250px 550px;
     gap: 10px;
     padding: 20px;
 }
@@ -35,6 +35,7 @@
 .generos {
     background-color: var(--pink2);
     grid-row: 2 / 4;
+    grid-column: 1 / 2;
     padding: 20px;
 }
 
@@ -58,9 +59,9 @@
 }
 
 .info {
-    grid-row: 2 / 4;
     background-color: var(--pink2);
     padding: 20px;
+    grid-row: 2 / 4;
 }
 .info .h2{
     font-size: 45px;            
@@ -87,18 +88,33 @@
     align-items: center;
     height: 250px;
     background-color: #fff0f6;
+    height: 420px;
 }
 
 .ator {
     background-color: var(--pink3);
     text-align: center;
-    padding: 10px;
+    padding: 10px; 
+    margin: 20px;
     border-radius: 10px;
     width: 180px;
-    height: 220px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.ator .h2{
+    font-size: 35px;            
+    color: var(--pink6);           
+    font-family: "Mynerve", cursive;       
+    font-weight: bold;
+}
+.ator p{
+    font-size: 35px;            
+    color: var(--pink7);           
+    font-family: "Mynerve", cursive;       
+    font-weight: bold;
 }
 
 .ator img {
