@@ -9,7 +9,7 @@ html{
 body{
     margin: 0px; 
     margin-bottom: 50px;         /* Adiciona margem na parte inferior da página */
-    background-color: #E1EBF4; /* Cor de fundo do corpo da página */
+    background-color: #ffffff; /* Cor de fundo do corpo da página */
     text-align:center;             /* Alinhamento do texto à esquerda */
     display: flex;
     justify-content: center; 
