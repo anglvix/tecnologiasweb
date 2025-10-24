@@ -11,8 +11,8 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 190px 600px 280px;
-    grid-template-rows: 100px 100px 250px 550px;
+    grid-template-columns: 200px 550px 300px;
+    grid-template-rows: 100px auto 600px;
     gap: 10px;
     padding: 20px;
 }
@@ -20,9 +20,10 @@
 .titulo {
     background-color: var(--pink5);
     grid-column: 1 / 4;
+    grid-row: 1/2;
     text-align: center;
     padding: 20px;
-    padding-bottom: 35px;
+    border-radius: 20px;
 }
 .titulo .h1{
     font-size: 55px;            
@@ -34,8 +35,9 @@
 
 .generos {
     background-color: var(--pink2);
-    grid-row: 2 / 4;
+    border-radius: 20px;
     grid-column: 1 / 2;
+    grid-row: 2 / 4;
     padding: 20px;
 }
 
@@ -47,8 +49,10 @@
 }
 
 .sinopse {
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
     background-color: var(--pink1);
+    border-radius: 20px;
     padding: 20px;
 }
 .sinopse .h2{
@@ -60,8 +64,10 @@
 
 .info {
     background-color: var(--pink2);
+    border-radius: 20px;
     padding: 20px;
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
 }
 .info .h2{
     font-size: 45px;            
@@ -72,6 +78,8 @@
 
 .elenco {
     background-color: var(--pink4);
+    border-radius: 20px;
+    grid-row: 3 / 3;
     grid-column: 2 / 4;
     padding: 20px;
 }
@@ -86,19 +94,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 250px;
+    height: 500px;
     background-color: #fff0f6;
-    height: 420px;
 }
 
 .ator {
     background-color: var(--pink3);
     text-align: center;
-    padding: 10px; 
+    padding: 20px; 
     margin: 20px;
     border-radius: 10px;
-    width: 180px;
-    height: 320px;
+    width: 300px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,7 +126,7 @@
 
 .ator img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
 }
