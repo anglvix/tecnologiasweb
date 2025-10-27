@@ -1,0 +1,293 @@
+:root{
+    /* CSS HEX */
+    --lavender-web: #d9e5ffff;
+    --periwinkle: #bfc9e5ff;
+    --cool-gray: #a4accaff;
+    --slate-gray: #6f7394ff;
+    --delft-blue: #3a3a5fff;
+    --space-cadet: #201d44ff;
+    --oxford-blue: #050029ff;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 50px;
+    background-color: var(--lavender-web);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+html, body {
+    font-family: 'Quicksand';
+    color: var(--oxford-blue);
+    font-size: 25px;
+}
+
+main {
+    margin: 20px;
+}
+
+.t1, .t2 {
+    font-size: 20px;
+    font-family: 'Quicksand';
+}
+
+.t1 {
+    color: var(--slate-gray);
+}
+
+.t2 {
+    color: var(--delft-blue);
+}
+
+.h1 {
+    font-size: 55px;
+    color: var(--delft-blue);
+    font-family: 'Khand';
+    font-weight: bold;
+}
+
+.h2 {
+    font-size: 45px;
+    color: var(--space-cadet);
+    font-family: 'Khand';
+    font-weight: bold;
+}
+
+.myimage {
+    width: 95%;
+    height: 80%;
+    margin: 10px 20px;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--space-cadet);
+    color: var(--lavender-web);
+    padding: 40px;
+    width: 100%;
+}
+
+nav h1 {
+    font-size: 37.5px; 
+    margin-left: 105px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 37.5px; 
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--lavender-web);
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-right: 105px;
+}
+
+.nav-links a:hover {
+    color: var(--periwinkle);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 45px; 
+    cursor: pointer;
+}
+
+.intro {
+    background-image: url("poznan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--lavender-web);
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.intro h1 {
+    font-size: 75px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow:
+      0 12px 34px rgba(0,0,0,0.70),
+      0 0 3em rgba(0,0,0,0.80),
+      0 0 1em rgba(0,0,0,0.65);
+}
+
+.intro p {
+    max-width: 700px;
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow:
+      0 8px 22px rgba(0,0,0,0.55),
+      0 0 2.5em rgba(0,0,0,0.65);
+}
+
+.attractions {
+    padding: 2rem;
+    background: var(--periwinkle);
+}
+
+.attractions h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--delft-blue);
+}
+
+.attractions-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--lavender-web);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--delft-blue);
+}
+
+.food {
+    padding: 2rem;
+}
+
+.food h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--delft-blue);
+}
+
+.food-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37.5px; 
+    justify-content: center;
+}
+
+.food-card {
+    flex: 1 1 calc(33.333% - 37.5px); 
+    background: var(--lavender-web);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.3s;
+    max-width: 400px;
+}
+
+.food-card:hover {
+    background: var(--periwinkle);
+}
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-card-content {
+    padding: 1rem;
+}
+
+.food-card-content h3 {
+    color: var(--delft-blue);
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .food-card {
+        flex: 1 1 calc(50% - 37.5px);
+    }
+
+    .intro h1 {
+        font-size: 35px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        text-shadow:
+        0 12px 34px rgba(0,0,0,0.70),
+        0 0 3em rgba(0,0,0,0.80),
+        0 0 1em rgba(0,0,0,0.65);
+    }
+
+    .intro p {
+        max-width: 700px;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow:
+        0 8px 22px rgba(0,0,0,0.55),
+        0 0 2.5em rgba(0,0,0,0.65);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+    .food-card {
+        flex: 1 1 100%;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .attractions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
