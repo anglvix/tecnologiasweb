@@ -1,4 +1,4 @@
-let numeros = [];
+let numeros = Array.from({ length: 90 }, (_, i) => i + 1);
 let somaAtual = '0';     
 
 function clicarNumero(n) {
@@ -25,7 +25,8 @@ function clicarIgual() {
     let resultado = numeros.reduce((a, b) => a + b, 0);
     alert("Resultado: " + resultado);
 
-    numeros = [];
+    // Reinicializa o array para 1..90 para manter sempre os números de 1 a 90
+    numeros = Array.from({ length: 90 }, (_, i) => i + 1);
     somaAtual = '0';
 }
 
