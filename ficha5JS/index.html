@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        let scriptdesejado = prompt("Qual script deseja executar? (1, 2, 3):");
+        let scriptdesejado = prompt("Qual script deseja executar? (1, 2, 3, 4):");
         switch (scriptdesejado) {
             case "1":
                 document.write('<script src="script1.js"><\/script>');
@@ -17,6 +17,9 @@
                 break;
             case "3":
                 document.write('<script src="script3.js"><\/script>');
+                break;
+            case "4":
+                document.write('<script src="script4.js"><\/script>');
                 break;
             default:
                 alert("Script inválido.");
